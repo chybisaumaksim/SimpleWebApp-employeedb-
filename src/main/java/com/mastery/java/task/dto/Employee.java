@@ -6,6 +6,8 @@ public class Employee {
     private String lastName;
     private Long departmentId;
     private String jobTitle;
+    private Gender gender;
+    private String dateOfBirth;
 
     public Gender getGender() {
         return gender;
@@ -14,9 +16,6 @@ public class Employee {
     public void setGender(Gender gender) {
         this.gender = gender;
     }
-
-    private Gender gender;
-    private String dateOfBirth;
 
     public Long getEmployeeId() {
         return employeeId;
@@ -75,7 +74,7 @@ public class Employee {
                 ", departmentId = " + departmentId +
                 ", jobTitle = '" + jobTitle + '\'' +
                 ", gender = " + gender +
-                ", dateOfBirth = '" + dateOfBirth + '\'' +
+                ", dateOfBirth = '" + dateOfBirth.replace("-", "") + '\'' +
                 '}';
     }
 }

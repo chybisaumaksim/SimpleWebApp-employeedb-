@@ -1,4 +1,4 @@
-package com.mastery.java.task.service;
+package com.mastery.java.task.dao;
 
 import com.mastery.java.task.dao.EmployeeDaoInterface;
 import com.mastery.java.task.dao.PersistException;
@@ -20,7 +20,7 @@ public class EmployeeDao implements EmployeeDaoInterface {
     private PreparedStatement statementDelete;
     private PreparedStatement statementSelectID;
 
-    protected EmployeeDao(Connection connection) throws PersistException {
+    public EmployeeDao(Connection connection) throws PersistException {
         try {
             this.connection = connection;
             statementCreate = connection.prepareStatement(getCreateQuery(), PreparedStatement.RETURN_GENERATED_KEYS);
@@ -68,7 +68,7 @@ public class EmployeeDao implements EmployeeDaoInterface {
                 empl.setLastName(rs.getString(3));
                 empl.setDepartmentId(rs.getLong(4));
                 empl.setJobTitle(rs.getString(5));
-                empl.setGender((Gender) rs.getObject(6));
+                empl.setGender(Gender.valueOf(rs.getString(6)));
                 empl.setDateOfBirth(rs.getString(7));
                 list.add(empl);
             }

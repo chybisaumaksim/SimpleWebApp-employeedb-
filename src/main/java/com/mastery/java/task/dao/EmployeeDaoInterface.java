@@ -20,4 +20,6 @@ public interface EmployeeDaoInterface {
 
     Employee getById(int id) throws PersistException;
 
+    void close() throws PersistException;
+
 }
