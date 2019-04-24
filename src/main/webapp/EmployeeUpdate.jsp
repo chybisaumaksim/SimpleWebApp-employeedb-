@@ -21,7 +21,7 @@
                 <br><a href="${pageContext.request.contextPath}/main?getAll">List of employees</a></br>
                 <br><a href="${pageContext.request.contextPath}/main?Update">Edit of employee</a></br>
                 <br><a href="${pageContext.request.contextPath}/main?Create">Create new employee</a></br>
-                <br><a href="${pageContext.request.contextPath}/main?GetById">Get employee</a></br>
+                <br><a href="${pageContext.request.contextPath}/main?getById">Get employee</a></br>
             </div>
         </form>
     </div>
@@ -50,7 +50,7 @@
         </tr>
         <tr>
             <td>Department ID:</td>
-            <td><input type="text" name="departmentId" value="${employee.departmentId}" required pattern="^[0-9]"/>
+            <td><input type="text" name="departmentId" value="${employee.departmentId}" required pattern="^[0-9]+$"/>
             </td>
         </tr>
         <tr>

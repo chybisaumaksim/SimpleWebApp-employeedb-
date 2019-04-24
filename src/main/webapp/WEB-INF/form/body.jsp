@@ -15,7 +15,7 @@
                 <br><a href="${pageContext.request.contextPath}/main?getAll">List of employees</a></br>
                 <br><a href="${pageContext.request.contextPath}/main?Delete">Edit of employee</a></br>
                 <br><a href="${pageContext.request.contextPath}/main?Create">Create new employee</a></br>
-                <br><a href="${pageContext.request.contextPath}/main?GetById">Get employee</a></br>
+                <br><a href="${pageContext.request.contextPath}/main?getById">Get employee</a></br>
             </div>
         </form>
     </div>

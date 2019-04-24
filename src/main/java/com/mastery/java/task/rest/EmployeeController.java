@@ -47,13 +47,21 @@ public class EmployeeController extends HttpServlet implements HttpSessionListen
             updateEmployee(req, resp, employeeDao);
         } else if (action == "Delete") {
             deleteEmployee(req, resp, employeeDao);
-        } else if (action == "getByIdEmployee") {
+        } else if (action == "getById") {
             getByIdEmployee(req, resp, employeeDao);
         }
     }
 
-    private void getByIdEmployee(HttpServletRequest req, HttpServletResponse resp, EmployeeDao employeeDao) {
-
+    private void getByIdEmployee(HttpServletRequest req, HttpServletResponse resp, EmployeeDao employeeDao) throws PersistException {
+        try {
+            String id = req.getParameter("id");
+            if (id != null) {
+                req.setAttribute("employee", employeeDao.getById(Long.parseLong(id)));
+            }
+            getServletContext().getRequestDispatcher("/EmployeeGetById.jsp").forward(req, resp);
+        } catch (IOException | PersistException | ServletException e) {
+            throw new PersistException(e.getMessage() + "Error retrieving all employee records ");
+        }
     }
 
     private void deleteEmployee(HttpServletRequest req, HttpServletResponse resp, EmployeeDao employeeDao) throws ServletException, IOException, PersistException {
@@ -158,8 +166,8 @@ public class EmployeeController extends HttpServlet implements HttpSessionListen
         if (req.getParameter("Delete") != null) {
             return "Delete";
         }
-        if (req.getParameter("getByIdEmployee") != null) {
-            return "getByIdEmployee";
+        if (req.getParameter("getById") != null) {
+            return "getById";
         }
         return null;
     }

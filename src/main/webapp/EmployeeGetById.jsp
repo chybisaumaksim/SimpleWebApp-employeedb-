@@ -1,6 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html; charset=UTF-8" %>
-<html>
 <head>
     <title>Employee</title>
 </head>
@@ -21,7 +20,7 @@
                 <br><a href="${pageContext.request.contextPath}/main?getAll">List of employees</a></br>
                 <br><a href="${pageContext.request.contextPath}/main?Delete">Edit of employee</a></br>
                 <br><a href="${pageContext.request.contextPath}/main?Create">Create new employee</a></br>
-                <br><a href="${pageContext.request.contextPath}/main?GetById">Get employee</a></br>
+                <br><a href="${pageContext.request.contextPath}/main?getById">Get employee</a></br>
             </div>
         </form>
     </div>
@@ -29,17 +28,25 @@
 <script>
     <%@include file="/WEB-INF/js/index.js"%>
 </script>
-<table width="100%" cellpadding="1" cellspacing="1">
-    <tr>
-        <td>Id</td>
-        <td>Name</td>
-        <td>Surname</td>
-        <td>Department ID</td>
-        <td>Job title</td>
-        <td>Gender</td>
-        <td>Date of birth</td>
-    </tr>
-    <c:forEach items="${employee}" var="employee">
+<form action="<c:url value="/main"/>" method="POST">
+    <table>
+        <tr>
+            <td>Id:</td>
+            <td><input type="text" name="id" value="${employee.employeeId}" required
+                       pattern="^[0-9]+$"/></td>
+            <td><input type="submit" value="Ok" name="getById"/></td>
+        </tr>
+    </table>
+    <table width="100%" cellpadding="1" cellspacing="1">
+        <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Surname</td>
+            <td>Department ID</td>
+            <td>Job title</td>
+            <td>Gender</td>
+            <td>Date of birth</td>
+        </tr>
         <tr>
             <td>${employee.employeeId}</td>
             <td>${employee.firstName}</td>
@@ -49,7 +56,7 @@
             <td>${employee.gender}</td>
             <td>${employee.dateOfBirth}</td>
         </tr>
-    </c:forEach>
-</table>
+    </table>
+</form>
 </body>
 </html>
