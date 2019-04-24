@@ -39,15 +39,15 @@ public class EmployeeController extends HttpServlet implements HttpSessionListen
         String action = checkAction(req);
         HttpSession session = req.getSession();
         EmployeeDao employeeDao = (EmployeeDao) session.getAttribute("employeeDao");
-        if (action == "getAll") {
+        if (action.equals("getAll")) {
             getAllEmployees(req, resp, employeeDao);
-        } else if (action == "Create") {
+        } else if (action.equals("Create")) {
             createEmployee(req, resp, employeeDao);
-        } else if (action == "Update") {
+        } else if (action.equals("Update")) {
             updateEmployee(req, resp, employeeDao);
-        } else if (action == "Delete") {
+        } else if (action.equals("Delete")) {
             deleteEmployee(req, resp, employeeDao);
-        } else if (action == "getById") {
+        } else if (action.equals("getById")) {
             getByIdEmployee(req, resp, employeeDao);
         }
     }
@@ -99,11 +99,10 @@ public class EmployeeController extends HttpServlet implements HttpSessionListen
                 employee.setDepartmentId(Long.parseLong(departmentId));
                 employee.setJobTitle(jobTitle);
                 employee.setGender(Gender.valueOf(gender));
-
                 if (validationBirthDate(dateOfBirth)) {
                     req.setAttribute("messageForBirthDate", "Wrong format of birthday");
                     employee.setDateOfBirth("");
-            } else {
+                } else {
                     employee.setDateOfBirth(dateOfBirth);
                     employeeDao.update(employee);
                     req.setAttribute("messageSuccess", "Employee record updated successfully");

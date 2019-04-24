@@ -7,8 +7,6 @@
 <body>
 <style>
     <%@include file="/WEB-INF/css/myStyle.css"%>
-</style>
-<style>
     <%@include file="/WEB-INF/css/menuStyle.css"%>
 </style>
 <div class="navbar">

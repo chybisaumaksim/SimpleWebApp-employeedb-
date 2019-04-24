@@ -2,13 +2,11 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
 <html>
 <head>
-    <title>Employee</title>
+    <title>Get all employees </title>
 </head>
 <body>
 <style>
     <%@include file="/WEB-INF/css/myStyle.css"%>
-</style>
-<style>
     <%@include file="/WEB-INF/css/menuStyle.css"%>
 </style>
 <div class="navbar">

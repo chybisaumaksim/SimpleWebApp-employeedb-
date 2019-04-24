@@ -26,7 +26,7 @@ public class EmployeeDao implements Dao {
             statementDelete = connection.prepareStatement(getDeleteQuery());
             statementSelectID = connection.prepareStatement(SelectIdQuery());
         } catch (SQLException e) {
-            throw new PersistException("Ошибка при создании prepareStatement в классе " + getClass(), e);
+            throw new PersistException("Error creating prepareStatement in class " + getClass(), e);
         }
     }
 
@@ -41,14 +41,14 @@ public class EmployeeDao implements Dao {
                 statementSelectID.setInt(1, id);
             }
         } catch (Exception e) {
-            throw new PersistException(" Невозможно записать данные в БД", e);
+            throw new PersistException(" Unable to write data to the database", e);
         } finally {
             try {
                 if (generatedId != null) {
                     generatedId.close();
                 }
             } catch (SQLException e) {
-                throw new PersistException("Ошибка закрытия потока", e);
+                throw new PersistException("Error closing stream", e);
             }
         }
     }
@@ -71,14 +71,14 @@ public class EmployeeDao implements Dao {
                 list.add(empl);
             }
         } catch (SQLException e) {
-            throw new PersistException("Ошибка Sql запроса", e);
+            throw new PersistException("Sql request error", e);
         } finally {
             try {
                 if (rs != null) {
                     rs.close();
                 }
             } catch (SQLException e) {
-                throw new PersistException("Ошибка закрытия потока", e);
+                throw new PersistException("Error closing stream", e);
             }
         }
         return list;
@@ -89,7 +89,7 @@ public class EmployeeDao implements Dao {
             prepareStatementForUpdate(statementUpdate, employee);
             statementUpdate.executeUpdate();
         } catch (SQLException e) {
-            throw new PersistException("Ошибка Sql запроса", e);
+            throw new PersistException("Sql request error", e);
         }
     }
 
@@ -119,14 +119,14 @@ public class EmployeeDao implements Dao {
                 employee.setDateOfBirth(rs.getString(7));
             }
         } catch (SQLException e) {
-            throw new PersistException("Ошибка обращения к БД ", e);
+            throw new PersistException("Error accessing the database ", e);
         } finally {
             try {
                 if (rs != null) {
                     rs.close();
                 }
             } catch (SQLException e) {
-                System.err.println("Ошибка закрытия потока " + e);
+                System.err.println("Error closing stream " + e);
             }
         }
         return employee;
@@ -163,7 +163,7 @@ public class EmployeeDao implements Dao {
             statement.setString(5, String.valueOf(object.getGender()));
             statement.setString(6, object.getDateOfBirth());
         } catch (SQLException e) {
-            throw new PersistException("Ошибка получения prepareStatementForInsert", e);
+            throw new PersistException("Error getting prepareStatementForInsert", e);
         }
     }
 
@@ -177,7 +177,7 @@ public class EmployeeDao implements Dao {
             statement.setString(6, object.getDateOfBirth());
             statement.setLong(7, object.getEmployeeId());
         } catch (Exception e) {
-            throw new PersistException("Ошибка получения prepareStatementForUpdate", e);
+            throw new PersistException("Error getting prepareStatementForUpdate", e);
 
         }
     }
@@ -186,7 +186,7 @@ public class EmployeeDao implements Dao {
         try {
             statement.setLong(1, object.getEmployeeId());
         } catch (Exception e) {
-            throw new PersistException("Ошибка получения prepareStatementForDelete", e);
+            throw new PersistException("Error getting prepareStatementForDelete", e);
 
         }
     }
@@ -196,33 +196,32 @@ public class EmployeeDao implements Dao {
             if (statementDelete != null)
                 statementDelete.close();
         } catch (SQLException e) {
-            throw new PersistException("Ошибка закрытия statementDelete ", e);
+            throw new PersistException("Error closing statementDelete ", e);
         }
         try {
             if (statementCreate != null)
                 statementCreate.close();
         } catch (SQLException e) {
-            throw new PersistException("Ошибка закрытия statementCreate ", e);
+            throw new PersistException("Error closing statementCreate ", e);
         }
         try {
             if (statementUpdate != null)
                 statementUpdate.close();
         } catch (SQLException e) {
-            throw new PersistException("Ошибка закрытия statementUpdate ", e);
+            throw new PersistException("Error closing statementUpdate ", e);
         }
         try {
             if (statementSelectID != null)
                 statementSelectID.close();
         } catch (SQLException e) {
-            throw new PersistException("Ошибка  закрытия statementSelectID ", e);
+            throw new PersistException("Error closing statementSelectID ", e);
         }
         try {
             if (connection != null)
                 connection.close();
         } catch (SQLException e) {
-            throw new PersistException("Ошибка закрытия Connection ", e);
+            throw new PersistException("Connection closing error ", e);
         }
     }
-
 }
 

@@ -33,20 +33,20 @@ public class EmployeeService implements Service {
             connection = DriverManager.getConnection(prop.getProperty("url"),
                     prop.getProperty("login"), prop.getProperty("password"));
         } catch (SQLException e) {
-            throw new PersistException("Ошибка подключения к БД", e);
+            throw new PersistException("Error connecting to the database ", e);
         } catch (FileNotFoundException e) {
-            throw new PersistException("Файл config.properties не найден.", e);
+            throw new PersistException("File config.properties not found ", e);
         } catch (IOException e) {
-            throw new PersistException("Ошибка при работе с потоком fileInputStream", e);
+            throw new PersistException("Error in fileInputStream", e);
         } catch (ClassNotFoundException e) {
-            throw new PersistException("Класс " + prop.getProperty("driver") + " не найден", e);
+            throw new PersistException("Class " + prop.getProperty("driver") + " not found", e);
         } finally {
             try {
                 if (is != null) {
                     is.close();
                 }
             } catch (IOException e) {
-                System.err.println("Ошибка закрытия потока InputStream" + e.getMessage());
+                System.err.println("Error closing stream InputStream" + e.getMessage());
             }
         }
         return connection;

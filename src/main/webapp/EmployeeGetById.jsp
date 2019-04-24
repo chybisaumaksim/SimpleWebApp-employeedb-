@@ -1,13 +1,11 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html; charset=UTF-8" %>
 <head>
-    <title>Employee</title>
+    <title>Get employee by ID</title>
 </head>
 <body>
 <style>
     <%@include file="/WEB-INF/css/myStyle.css"%>
-</style>
-<style>
     <%@include file="/WEB-INF/css/menuStyle.css"%>
 </style>
 <div class="navbar">

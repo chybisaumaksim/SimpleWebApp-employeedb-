@@ -2,13 +2,11 @@
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
-    <title>Удаление студента</title>
+    <title>Delete employee</title>
 </head>
 <body>
 <style>
     <%@include file="/WEB-INF/css/myStyle.css"%>
-</style>
-<style>
     <%@include file="/WEB-INF/css/menuStyle.css"%>
 </style>
 <div class="navbar">
