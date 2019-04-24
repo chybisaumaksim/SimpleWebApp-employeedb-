@@ -1,7 +1,5 @@
 package com.mastery.java.task.dao;
 
-import com.mastery.java.task.dao.EmployeeDaoInterface;
-import com.mastery.java.task.dao.PersistException;
 import com.mastery.java.task.dto.Employee;
 import com.mastery.java.task.dto.Gender;
 
@@ -12,7 +10,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class EmployeeDao implements EmployeeDaoInterface {
+public class EmployeeDao implements Dao {
 
     private Connection connection;
     private PreparedStatement statementCreate;
@@ -104,12 +102,12 @@ public class EmployeeDao implements EmployeeDaoInterface {
         }
     }
 
-    public Employee getById(int id) throws PersistException {
+    public Employee getById(Long id) throws PersistException {
         Employee employee = new Employee();
         ResultSet rs = null;
         try {
             PreparedStatement stm = connection.prepareStatement(SelectIdQuery());
-            stm.setInt(1, id);
+            stm.setLong(1, id);
             rs = stm.executeQuery();
             while (rs.next()) {
                 employee.setEmployeeId(rs.getLong(1));
@@ -128,7 +126,7 @@ public class EmployeeDao implements EmployeeDaoInterface {
                     rs.close();
                 }
             } catch (SQLException e) {
-                throw new PersistException("Ошибка закрытия потока", e);
+                System.err.println("Ошибка закрытия потока " + e);
             }
         }
         return employee;

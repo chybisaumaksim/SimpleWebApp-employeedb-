@@ -3,7 +3,7 @@ package com.mastery.java.task.dao;
 import com.mastery.java.task.dto.Employee;
 import com.mastery.java.task.dto.Gender;
 import com.mastery.java.task.service.EmployeeService;
-import com.mastery.java.task.service.EmployeeServiceInterface;
+import com.mastery.java.task.service.Service;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -16,7 +16,7 @@ public class EmployeeDaoTest {
 
     @BeforeClass
     public static void setUp() throws PersistException {
-        EmployeeServiceInterface employeeService = new EmployeeService();
+        Service employeeService = new EmployeeService();
         employeeDao = employeeService.getEmployeeDao();
     }
 
@@ -36,13 +36,13 @@ public class EmployeeDaoTest {
     }
 
     @Test
-    public void getAll() {
-
+    public void getAll() throws PersistException {
+        assertTrue(employeeDao.getAll().size()!= 0);
     }
 
     @Test
     public void update() throws PersistException {
-        employee.setEmployeeId(2L);
+        employee.setEmployeeId(129L);
         employee.setFirstName("Victor");
         employee.setLastName("Popov");
         employee.setDepartmentId(3L);
@@ -50,7 +50,7 @@ public class EmployeeDaoTest {
         employee.setGender(Gender.MALE);
         employee.setDateOfBirth("19890101");
         employeeDao.update(employee);
-        assertEquals(employee.toString(), employeeDao.getById(2).toString());
+        assertEquals(employee.toString(), employeeDao.getById(129L).toString());
     }
 
     @Test
@@ -61,7 +61,7 @@ public class EmployeeDaoTest {
     }
 
     @Test
-    public void getById() {
+    public void getById() throws PersistException {
 
     }
 

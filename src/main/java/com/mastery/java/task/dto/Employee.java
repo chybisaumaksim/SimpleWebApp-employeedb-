@@ -67,14 +67,18 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee{" +
-                "employeeId = " + employeeId +
-                ", firstName = '" + firstName + '\'' +
-                ", lastName = '" + lastName + '\'' +
-                ", departmentId = " + departmentId +
-                ", jobTitle = '" + jobTitle + '\'' +
-                ", gender = " + gender +
-                ", dateOfBirth = '" + dateOfBirth.replace("-", "") + '\'' +
-                '}';
+        if (dateOfBirth != null) {
+            return "Employee{" +
+                    "employeeId = " + employeeId +
+                    ", firstName = '" + firstName + '\'' +
+                    ", lastName = '" + lastName + '\'' +
+                    ", departmentId = " + departmentId +
+                    ", jobTitle = '" + jobTitle + '\'' +
+                    ", gender = " + gender +
+                    ", dateOfBirth = '" + dateOfBirth.replace("-", "") + '\'' +
+                    '}';
+        }
+        return null;
     }
+
 }

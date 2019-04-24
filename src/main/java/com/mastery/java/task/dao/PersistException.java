@@ -18,9 +18,6 @@ public class PersistException extends Exception {
         super(message, cause, enableSuppression, writableStackTrace);
     }
 
-    public PersistException() {
-    }
-
     public PersistException(String message) {
         super(message);
     }

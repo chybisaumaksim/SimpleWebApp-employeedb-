@@ -8,7 +8,7 @@ import java.util.List;
  * @author Maksim Chybisau
  * @project Project
  */
-public interface EmployeeDaoInterface {
+public interface Dao {
 
     List<Employee> getAll() throws PersistException;
 
@@ -18,7 +18,7 @@ public interface EmployeeDaoInterface {
 
     void delete(Employee employee) throws PersistException;
 
-    Employee getById(int id) throws PersistException;
+    Employee getById(Long id) throws PersistException;
 
     void close() throws PersistException;
 
