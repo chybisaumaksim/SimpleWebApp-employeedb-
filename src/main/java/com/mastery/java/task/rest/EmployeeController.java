@@ -185,7 +185,6 @@ public class EmployeeController extends HttpServlet implements HttpSessionListen
     @Override
     public void sessionDestroyed(HttpSessionEvent se) {
         HttpSession session = se.getSession();
-        EmployeeDao employeeDao = (EmployeeDao) session.getAttribute("employeeDao");
             System.out.println(" (session) Destroyed: ID= "
                     + session.getId());
     }

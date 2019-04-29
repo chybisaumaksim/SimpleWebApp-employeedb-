@@ -7,28 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e83531c-5771-4360-9d8c-2f1351d284ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mastery/java/task/dao/EmployeeDaoJdbcImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mastery/java/task/service/EmployeeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-core-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mastery/java/task/config/AppConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mastery/java/task/config/AppConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mastery/java/task/dao/Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mastery/java/task/dao/Dao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mastery/java/task/dao/EmployeeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mastery/java/task/dao/EmployeeDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mastery/java/task/main/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mastery/java/task/rest/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mastery/java/task/rest/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mastery/java/task/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mastery/java/task/service/EmployeeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mastery/java/task/dao/EmployeeDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mastery/java/task/dao/EmployeeDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mastery/java/task/rest/EmployeeControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mastery/java/task/rest/EmployeeControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mastery/java/task/service/EmployeeServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mastery/java/task/service/EmployeeServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mastery/java/task/config/AppConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mastery/java/task/config/AppConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mastery/java/task/rest/EmployeeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mastery/java/task/rest/EmployeeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mastery/java/task/service/EmployeeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mastery/java/task/service/EmployeeService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mastery.java.task.dao.EmployeeDaoTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mastery.java.task.dao.EmployeeDaoTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.mastery.java.task.dao.EmployeeDaoTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.mastery.java.task.dao.EmployeeDaoTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mastery/java/task/dao/EmployeeDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mastery/java/task/dao/EmployeeDaoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mastery/java/task/service/EmployeeServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mastery/java/task/service/EmployeeServiceTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -114,9 +100,9 @@
           <entry key="java" value="184" />
           <entry key="js" value="5" />
           <entry key="jsp" value="55" />
-          <entry key="properties" value="9" />
+          <entry key="properties" value="10" />
           <entry key="sql" value="2" />
-          <entry key="xml" value="12" />
+          <entry key="xml" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -127,9 +113,9 @@
           <entry key="JAVA" value="184" />
           <entry key="JSP" value="55" />
           <entry key="JavaScript" value="5" />
-          <entry key="Properties" value="9" />
+          <entry key="Properties" value="10" />
           <entry key="Scratch" value="2" />
-          <entry key="XML" value="12" />
+          <entry key="XML" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -137,22 +123,22 @@
           <entry key="cell" value="133" />
           <entry key="dummy" value="37" />
           <entry key="ft" value="48" />
-          <entry key="java" value="5046" />
+          <entry key="java" value="5055" />
           <entry key="jsp" value="665" />
           <entry key="properties" value="1" />
-          <entry key="txt" value="109" />
-          <entry key="xml" value="254" />
+          <entry key="txt" value="145" />
+          <entry key="xml" value="258" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5046" />
+          <entry key="JAVA" value="5055" />
           <entry key="JSP" value="665" />
-          <entry key="PLAIN_TEXT" value="146" />
+          <entry key="PLAIN_TEXT" value="182" />
           <entry key="Properties" value="1" />
           <entry key="Scratch" value="133" />
           <entry key="VTL" value="48" />
-          <entry key="XML" value="254" />
+          <entry key="XML" value="258" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.core.usages.trigger">
@@ -164,14 +150,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mastery/java/task/config/AppConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="209">
+              <caret line="46" column="38" lean-forward="true" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-core-config.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -200,11 +195,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/mastery/java/task/rest/EmployeeControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+            <state relative-caret-position="66">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -240,18 +235,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mastery/java/task/service/EmployeeMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mastery/java/task/service/EmployeeService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="110">
@@ -260,6 +243,15 @@
                 <element signature="imports" expanded="true" />
                 <element signature="e#188#261#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -283,15 +275,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mastery/java/task/dao/Dao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -300,8 +283,8 @@
         <option value="Interface" />
         <option value="JUnit4 Test Class" />
         <option value="Jsp File" />
-        <option value="spring-beans.schema" />
         <option value="Class" />
+        <option value="spring-beans.schema" />
       </list>
     </option>
   </component>
@@ -340,12 +323,10 @@
         <option value="$PROJECT_DIR$/src/main/webapp/EmployeeCreate.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/EmployeeDelete.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/EmployeeGetById.jsp" />
-        <option value="$PROJECT_DIR$/context.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mastery/java/task/dao/EmployeeDaoSpring.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mastery/java/task/dao/EmployeeDaoJdbcImpl.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mastery/java/task/service/EmployeeMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mastery/java/task/config/AppConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mastery/java/task/dao/Dao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mastery/java/task/service/EmployeeService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mastery/java/task/dao/EmployeeDao.java" />
@@ -353,6 +334,9 @@
         <option value="$PROJECT_DIR$/src/test/java/com/mastery/java/task/service/EmployeeServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mastery/java/task/rest/EmployeeController.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mastery/java/task/rest/EmployeeControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/context.xml" />
+        <option value="$PROJECT_DIR$/context.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mastery/java/task/config/AppConfiguration.java" />
       </list>
     </option>
   </component>
@@ -464,95 +448,6 @@
               <item name="task" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="task" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="task" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="task" type="462c0819:PsiDirectoryNode" />
-              <item name="rest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="task" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="task" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="task" type="462c0819:PsiDirectoryNode" />
-              <item name="rest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="task" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -563,7 +458,7 @@
     <property name="DatabaseDriversLRU" value="postgresql&#10;mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556567593139" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556568687807" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="database.console.LAST_STATE" value="false" />
@@ -582,8 +477,11 @@
       <recent name="com.mastery.java.task.dao" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Максим\Desktop\LEssons\ОТВЕТЫ\11\Project\src\main\webapp" />
+      <recent name="C:\Users\Максим\Desktop\LEssons\ОТВЕТЫ\11\Project" />
+      <recent name="C:\Users\Максим\Desktop\LEssons\ОТВЕТЫ\11\Project\src" />
       <recent name="C:\Users\Максим\Desktop\LEssons\ОТВЕТЫ\11\Project\src\main" />
+      <recent name="C:\Users\Максим\Desktop\LEssons\ОТВЕТЫ\11\Project\src\main\java" />
+      <recent name="C:\Users\Максим\Desktop\LEssons\ОТВЕТЫ\11\Project\src\main\webapp" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -811,7 +709,7 @@
       <workItem from="1556122887488" duration="3181000" />
       <workItem from="1556284202952" duration="1715000" />
       <workItem from="1556391208564" duration="5327000" />
-      <workItem from="1556533507136" duration="23347000" />
+      <workItem from="1556533507136" duration="24400000" />
     </task>
     <task id="LOCAL-00001" summary="Commit 2. &#10;Creating Tests">
       <created>1556029408485</created>
@@ -841,13 +739,17 @@
       <option name="project" value="LOCAL" />
       <updated>1556124064698</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Commit 5. &#10;add Spring&#10;tests&#10;29.04 22.00">
+      <created>1556567679121</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1556567679121</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EmployeeDaoTest_update - 2019.04.29 at 21h 27m 51s.xml">
-      <configuration name="EmployeeDaoTest.update" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="EmployeeDaoTest_update - 2019.04.29 at 21h 28m 51s.xml">
       <configuration name="EmployeeDaoTest.update" configurationId="JUnit" />
     </history-entry>
@@ -875,9 +777,12 @@
     <history-entry file="EmployeeControllerTest_getByIdEmployee - 2019.04.29 at 21h 42m 48s.xml">
       <configuration name="EmployeeControllerTest.getByIdEmployee" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="EmployeeControllerTest_getByIdEmployee - 2019.04.29 at 21h 51m 07s.xml">
+      <configuration name="EmployeeControllerTest.getByIdEmployee" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87324000" />
+    <option name="totallyTimeSpent" value="88377000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -929,7 +834,8 @@
     <MESSAGE value="Commit 3. &#10;All JSP + controller&#10;24.04 2.40" />
     <MESSAGE value="Commit 3. &#10;getById&#10;24.04 3.40" />
     <MESSAGE value="Commit 4. &#10;All in English&#10;minor fixes&#10;25.04 18.40" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 4. &#10;All in English&#10;minor fixes&#10;25.04 18.40" />
+    <MESSAGE value="Commit 5. &#10;add Spring&#10;tests&#10;29.04 22.00" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 5. &#10;add Spring&#10;tests&#10;29.04 22.00" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -956,13 +862,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0-sources.jar!/javax/servlet/http/HttpServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-193">
-          <caret line="208" column="19" selection-start-line="208" selection-start-column="19" selection-end-line="208" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WEB-INF/css/myStyle.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1091,7 +990,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/context.xml">
+    <entry file="file://$PROJECT_DIR$/spring-core-config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="11" selection-end-column="15" />
@@ -1140,13 +1039,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="726">
           <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="9" selection-start-column="9" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -1307,6 +1199,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mastery/java/task/dao/EmployeeDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mastery/java/task/rest/EmployeeControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mastery/java/task/rest/EmployeeController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
@@ -1326,30 +1242,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/spring-core-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mastery/java/task/config/AppConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="209">
+          <caret line="46" column="38" lean-forward="true" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mastery/java/task/dao/EmployeeDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mastery/java/task/rest/EmployeeControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
         </state>
       </provider>
     </entry>
