@@ -4,11 +4,12 @@ import com.mastery.java.task.dto.Employee;
 import com.mastery.java.task.dto.Gender;
 import com.mastery.java.task.service.EmployeeService;
 import com.mastery.java.task.service.Service;
-import org.junit.AfterClass;
+import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class EmployeeDaoTest {
 
@@ -28,7 +29,7 @@ public class EmployeeDaoTest {
         employee.setFirstName("Tatiana");
         employee.setLastName("Sergeeva");
         employee.setDepartmentId(3L);
-        employee.setJobTitle("kook");
+        employee.setJobTitle("cook");
         employee.setGender(Gender.FEMALE);
         employee.setDateOfBirth("19670607");
         employeeDao.create(employee);
@@ -37,15 +38,16 @@ public class EmployeeDaoTest {
 
     @Test
     public void getAll() throws PersistException {
-        assertTrue(employeeDao.getAll().size()!= 0);
+        assertTrue(employeeDao.getAll().size() != 0);
     }
 
     @Test
     public void update() throws PersistException {
+        Long number=(long)Math.random()*10;
         employee.setEmployeeId(129L);
         employee.setFirstName("Victor");
         employee.setLastName("Popov");
-        employee.setDepartmentId(3L);
+        employee.setDepartmentId(number);
         employee.setJobTitle("cheef");
         employee.setGender(Gender.MALE);
         employee.setDateOfBirth("19890101");
@@ -53,22 +55,27 @@ public class EmployeeDaoTest {
         assertEquals(employee.toString(), employeeDao.getById(129L).toString());
     }
 
+
     @Test
-    public void delete() throws PersistException {
-        employee.setEmployeeId(3L);
-        employeeDao.delete(employee);
-        assertFalse(employeeDao.getAll().contains(employee));
+    public void delete() {
+        employee.setEmployeeId(190L);
+            try {
+                employeeDao.delete(employee);
+            } catch (PersistException e) {
+                Assert.fail();
+            }
     }
 
     @Test
     public void getById() throws PersistException {
-
-    }
-
-    @AfterClass
-    public static void close() throws PersistException {
-        if (employeeDao != null) {
-            employeeDao.close();
-        }
+        employee.setEmployeeId(129L);
+        employee.setFirstName("Victor");
+        employee.setLastName("Popovich");
+        employee.setDepartmentId(3L);
+        employee.setJobTitle("cheef");
+        employee.setGender(Gender.MALE);
+        employee.setDateOfBirth("19890101");
+        employeeDao.update(employee);
+        assertEquals(employee.toString(), employeeDao.getById(129L).toString());
     }
 }

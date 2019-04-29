@@ -2,6 +2,7 @@ package com.mastery.java.task.dao;
 
 import com.mastery.java.task.dto.Employee;
 
+import java.sql.SQLException;
 import java.util.List;
 
 /**
@@ -18,8 +19,5 @@ public interface Dao {
 
     void delete(Employee employee) throws PersistException;
 
-    Employee getById(Long id) throws PersistException;
-
-    void close() throws PersistException;
-
+    Employee getById(Long id) throws PersistException, SQLException;
 }

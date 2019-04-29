@@ -186,13 +186,8 @@ public class EmployeeController extends HttpServlet implements HttpSessionListen
     public void sessionDestroyed(HttpSessionEvent se) {
         HttpSession session = se.getSession();
         EmployeeDao employeeDao = (EmployeeDao) session.getAttribute("employeeDao");
-        try {
-            employeeDao.close();
             System.out.println(" (session) Destroyed: ID= "
                     + session.getId());
-        } catch (PersistException e) {
-            System.err.println("Session closing error" + e.getMessage());
-        }
     }
 
     private boolean validationBirthDate(String birthDate) {
